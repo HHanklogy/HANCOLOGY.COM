@@ -14,7 +14,26 @@ html{
 *::after {
   box-sizing: border-box;
 }
-
+.insta{
+      background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+            background-clip: text; /* استخدام التدرج في النص */
+            color: transparent; /* جعل النص شفافًا بحيث يظهر التدرج خلفه */
+    }
+    .whats{
+      background:  linear-gradient(45deg, #25F4EE, #FE2C55, #000000);
+            background-clip: text; /* استخدام التدرج في النص */
+            color: transparent; /* جعل النص شفافًا بحيث يظهر التدرج خلفه */
+    }
+    .phone{
+      background: linear-gradient(135deg, #1E88E5, #42A5F5); /* Gradient blue for a modern look */
+            background-clip: text; /* استخدام التدرج في النص */
+            color: transparent; /* جعل النص شفافًا بحيث يظهر التدرج خلفه */
+    }
+    .mab{
+      background: linear-gradient(45deg, #DB4437, #0F9D58, #F4B400, #4285F4);
+            background-clip: text; /* استخدام التدرج في النص */
+            color: transparent; /* جعل النص شفافًا بحيث يظهر التدرج خلفه */
+    }
 html {
   font-family: sans-serif;
   /* line-height: 1.15; */
