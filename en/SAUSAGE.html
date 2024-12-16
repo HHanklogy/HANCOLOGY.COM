@@ -14,7 +14,7 @@
   <meta name="csrf-param" content="authenticity_token" />
   <style>
     :root {
-      --primary-color: #072422;
+      --primary-color: rgb(51, 50, 50);
     }
   </style>
 </head>
@@ -22,10 +22,10 @@
 <body>
   <!-- //////////////////////////////////////////////// header //////////////////////////////////////////////////////////////////// -->
   <div class="menu-header"
-    style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/home/bg.webp);">
-    <div id="company-header" class="scale-in-center">
-      <div id="company-logo" class="flex justify-center items-center LOGO1"><img alt="HANKOLOGY" src="../images/home/items-logo.png" width="250" height="80"style="border-radius: 6px 25px; margin-bottom: 10px;" /></div>
-      <h1 class="menu-title " > SAUSAGE </h1>
+  style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/home/bg.webp);">
+  <div id="company-header" class="scale-in-center">
+    <div id="company-logo" class="flex justify-center items-center LOGO1"><img alt="HANKOLOGY" src="../images/home/items-logo.png" width="250" height="80"style="border-radius: 6px 25px; margin-bottom: 10px;" /></div>
+    <h1 class="menu-title " > SAUSAGE </h1>
     </div>
   </div>
 
@@ -44,7 +44,8 @@
                   <div class="col">
                     <h2 class="card-title">Golden Melt                     </h2>
                     <p><br>
-                      Chicken cheese sausage made with our original spices and topped with our special dijon mayo dressing, served in a soft, buttery brioche bun with fresh tomato, onions, pickles and our homemade fries.</p>
+                      Chicken cheese sausage made with our original spices and topped with our 
+                      special dijon mayo dressing, served in a soft.</p>
                 <br>  </div>
                 </div>
                 <div class="row menu-item-desc">
@@ -275,7 +276,8 @@
                 <div class="row menu-item-name">
                   <div class="col">
                     <h2 class="card-title">Hank's Fiesta    </h2>
-                    <p><br>  The party isn’t over until you have tried the Hank’s Fiesta. A mix of all our sausage flavors in slider buns served with our special mini sticks crispy chips.</p>
+                    <p><br>  The party isn’t over until you have tried the Hank’s Fiesta. A mix of all our sausage flavors in slider buns
+                       served with our special mini sticks crispy chips.</p>
                   </div>
                 </div>
                 <div class="row menu-item-desc">
@@ -415,7 +417,6 @@
 
     </div>
   </footer>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script> -->
   <script>
     $(document).on('turbolinks:load', function () {
       const observer = lozad();
@@ -426,7 +427,7 @@
     }
     document.querySelectorAll('img').forEach(img => {
     img.setAttribute('draggable', 'false');
-});
+})
   </script>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
