@@ -62,9 +62,13 @@ html {
   text-decoration: none;
   color: #000;
   border-radius: 3px;
+<<<<<<< HEAD
   margin-bottom: 5px;
   z-index: 100;
 
+=======
+  margin-bottom: 10px;
+>>>>>>> d24997eb015c4c432039f8aa1df3d9e3b68b63fe
 }
 
 .dropdown-menu a i {
