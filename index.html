@@ -21,7 +21,7 @@
     :root {
       --primary-color: #031f46;
     }
-   
+
   </style>
 </head>
 
@@ -57,10 +57,23 @@
         <i class="fas fa-phone icon-color phone"></i>
       </a>
 
-      <a id="contact-whatsapp" class="h-head h-h-i scale-in-center" target="_blank" href="https://wa.me/+201063773339" >
-        <i class="fab fa-whatsapp  icon-color" style="color: #25D366;"></i>
-      </a> 
+      <div class="dropdown" style="display: inline;">
+        <button id="close-dropdown" class="close-btn">×</button>
+        <a href="#" id="whatsapp-icon" class="whatsapp-link h-head h-h-i scale-in-center">
+         <i class="fab fa-whatsapp  icon-color" style="color: #25D366;"></i>
+        </a>
+        <div id="dropdown-menu" class="dropdown-menu">
+          <a href="https://wa.me/+201063773339" target="_blank">
+           <span style="color: #031f46; margin-right: 33px;" > zayed branch</span> <i class="fab fa-whatsapp  icon-color" style="color: #25D366;"></i>
+          </a>
+          <hr style="width: 90%; margin: auto;">
 
+          <a href="https://wa.me/+201063773339" target="_blank">
+            <span style="color: #031f46; margin-right: 33px;" > zayed branch</span> <i class="fab fa-whatsapp  icon-color" style="color: #25D366;"></i>
+           </a>
+        </div>
+      </div>
+        
       <a id="contact-address" class="h-head h-h-i scale-in-center" target="_blank"
         href="https://maps.app.goo.gl/qYuAueFh6tFQPNYZ8?g_st=iw">
         <i class="fas fa-map-marker-alt icon-color mab"></i>
@@ -76,7 +89,7 @@
   </div>
   <!-- ///////////////////////////////////////////// new dishes  ///////////////////////////////////////////////// -->
 
-
+<br>
   <div id="new-items" class="slide-in-left">
     <h1>OUR MENU :- </h1>
 
@@ -112,7 +125,7 @@
 
       <div class="col-md-6 col-6 col-lg-3 mb-4 ">
         <a href="en/BREAD-BOWL.html" class="image-container">
-          <img src="images/home/bread bowl.jpg" class=" img-fluid i-b-radius slide-in-left " draggable="false" alt="Image 1">
+          <img src="images/home/اكل.jpg" class=" img-fluid i-b-radius slide-in-left " draggable="false" alt="GOURNET BUGRER">GOURNET BUGRER
         </a>
       </div>
 
@@ -156,7 +169,7 @@
 
       <div class="col-md-6 col-6 col-lg-3 mb-4 ">
         <a href="en/DESSERTS.html" class="image-container">
-          <img src="images/home/desserts.jpg" class=" img-fluid i-b-radius slide-in-right " draggable="false" alt="Image 1">
+          <img src="images/home/اكل.jpg" class=" img-fluid i-b-radius slide-in-right " draggable="false" alt="Image 1">signature
         </a>
       </div>
 
@@ -175,7 +188,7 @@
 
     </div>
  
-   
+  </div>
 
     <!-- ///////////////////////////////////////////// New Drinks  ///////////////////////////////////////////////// -->
     <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
@@ -184,14 +197,13 @@
         const observer = lozad();
         observer.observe();
       })
-
-
-
     </script>
+
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
