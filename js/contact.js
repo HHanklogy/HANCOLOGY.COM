@@ -16,13 +16,6 @@ whatsappIcon.addEventListener("click", (e) => {
     dropdownMenu.classList.add("show");
   }
 });
-
-// إغلاق الـ dropdown عند النقر على زر الإغلاق
-closeButton.addEventListener("click", () => {
-  dropdownMenu.style.display = "none";
-  dropdownMenu.classList.remove("show");
-});
-
 // إغلاق الـ dropdown عند النقر في أي مكان خارج الـ dropdown
 document.addEventListener("click", (e) => {
   if (!whatsappIcon.contains(e.target) && !dropdownMenu.contains(e.target)) {
