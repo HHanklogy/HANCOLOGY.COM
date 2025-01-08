@@ -1,26 +1,54 @@
 
 // جلب عناصر الأيقونة والقائمة
-const whatsappIcon = document.getElementById("whatsapp-icon");
-const dropdownMenu = document.getElementById("dropdown-menu");
-const closeButton = document.getElementById("close-dropdown");
+const telIcon = document.getElementById("tel-icon");
+const dropdownMenu1 = document.getElementById("dropdown-menu1");
+const closeButton1 = document.getElementById("close-dropdown");
 
 // إضافة حدث الضغط لإظهار/إخفاء القائمة
-whatsappIcon.addEventListener("click", (e) => {
+telIcon.addEventListener("click", (e) => {
   e.preventDefault(); // منع السلوك الافتراضي للرابط
   // التبديل بين إظهار/إخفاء القائمة
-  if (dropdownMenu.style.display === "block") {
-    dropdownMenu.style.display = "none";
-    dropdownMenu.classList.remove("show");
+  if (dropdownMenu1.style.display === "block") {
+    dropdownMenu1.style.display = "none";
+    dropdownMenu1.classList.remove("show");
   } else {
-    dropdownMenu.style.display = "block";
-    dropdownMenu.classList.add("show");
+    dropdownMenu1.style.display = "block";
+    dropdownMenu1.classList.add("show");
   }
 });
 // إغلاق الـ dropdown عند النقر في أي مكان خارج الـ dropdown
 document.addEventListener("click", (e) => {
-  if (!whatsappIcon.contains(e.target) && !dropdownMenu.contains(e.target)) {
-    dropdownMenu.style.display = "none";
-    dropdownMenu.classList.remove("show");
+  if (!telIcon.contains(e.target) && !dropdownMenu1.contains(e.target)) {
+    dropdownMenu1.style.display = "none";
+    dropdownMenu1.classList.remove("show");
   }
 });
+
+// ////////////////////////////////////////////////////////////////////////////////////////
+
+// جلب عناصر الأيقونة والقائمة
+const mabIcon = document.getElementById("mab-icon");
+const dropdownMenu2 = document.getElementById("dropdown-menu2");
+const closeButton2 = document.getElementById("close-dropdown2");
+
+// إضافة حدث الضغط لإظهار/إخفاء القائمة
+mabIcon.addEventListener("click", (e) => {
+  e.preventDefault(); // منع السلوك الافتراضي للرابط
+  // التبديل بين إظهار/إخفاء القائمة
+  if (dropdownMenu2.style.display === "block") {
+    dropdownMenu2.style.display = "none";
+    dropdownMenu2.classList.remove("show");
+  } else {
+    dropdownMenu2.style.display = "block";
+    dropdownMenu2.classList.add("show");
+  }
+});
+// إغلاق الـ dropdown عند النقر في أي مكان خارج الـ dropdown
+document.addEventListener("click", (e) => {
+  if (!mabIcon.contains(e.target) && !dropdownMenu2.contains(e.target)) {
+    dropdownMenu2.style.display = "none";
+    dropdownMenu2.classList.remove("show");
+  }
+});
+
 

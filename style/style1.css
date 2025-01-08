@@ -24,28 +24,28 @@ html {
 
 
  /* تنسيق الرابط الرئيسي */
- .whatsapp-link {
+ .tel-link {
   display: inline-block;
   width: 50px;
-  height: 50px;
-  background-color: #25D366;
+  height: 20px;
   border-radius: 50%;
   text-align: center;
-  line-height: 50px;
+  line-height: 10px;
   color: white;
   font-size: 24px;
   position: relative;
   text-decoration: none;
   cursor: pointer;
+  z-index: 1000 !important;
 }
 
 /* القائمة المنسدلة (مخفية افتراضيًا) */
-.dropdown-menu {
+.dropdown-menu-tel {
   display: none;
   position: absolute;
-  top: 60px;
-  left: 38%;
-  width: 230px;
+  top: 45px;
+  left: 30%;
+  width: 130px;
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -55,7 +55,7 @@ html {
 }
 
 /* تنسيق العناصر داخل القائمة */
-.dropdown-menu a {
+.dropdown-menu-tel a {
   display: flex;
   align-items: center;
   padding: 5px 10px;
@@ -64,28 +64,27 @@ html {
   border-radius: 3px;
   margin-bottom: 5px;
   z-index: 100;
+  font-size: 15px !important;
 
 }
 
-.dropdown-menu a i {
-  margin-right: 10px;
-  color: #25D366;
+.dropdown-menu-tel a i {
+  margin-left: 10px;
   z-index: 100;
 
 }
 
-.dropdown-menu a:hover {
+.dropdown-menu-tel a:hover {
   background-color: #f0f0f0;
   
 }
 /* تنسيق زر الإغلاق (×) */
-.close-btn {
+.close-btn1 {
   position: absolute;
   top: 10px;
   right: 10px;
   background: none;
   border: none;
-  color: #25D366;
   font-size: 24px;
   cursor: pointer;
   display: none; /* إخفاء الزر بشكل افتراضي */
@@ -98,6 +97,79 @@ html {
 
 }
 
+ /* تنسيق الرابط الرئيسي */
+ .mab-link {
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 10px;
+  color: white;
+  font-size: 24px;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 1000 !important;
+}
+
+/* القائمة المنسدلة (مخفية افتراضيًا) */
+.dropdown-menu-mab {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 63%;
+  width: 130px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  padding: 2px;
+  z-index: 100;
+}
+
+/* تنسيق العناصر داخل القائمة */
+.dropdown-menu-mab a {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  z-index: 100;
+  font-size: 15px !important;
+
+}
+
+.dropdown-menu-mab a i {
+  margin-left: 10px;
+  z-index: 100;
+
+}
+
+.dropdown-menu-mab a:hover {
+  background-color: #f0f0f0;
+  
+}
+/* تنسيق زر الإغلاق (×) */
+.close-btn2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* إخفاء الزر بشكل افتراضي */
+}
+
+/* عرض زر الإغلاق فقط عند ظهور القائمة */
+.dropdown-menu2.show .close-btn2 {
+  display: block; /* إظهار الزر عند فتح الدروب داون */
+  z-index: 100;
+
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
