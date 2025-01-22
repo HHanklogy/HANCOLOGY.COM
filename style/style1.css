@@ -199,10 +199,10 @@ transition: 0.3s;
   scale: 1.3;
 }
 .f-color{
-  background: linear-gradient(45deg,#0f3533,#0f3533, #0f3533,#4e540a,#ec4823,#ec4823,#ec4823); /* التدرج بين الألوان */
-            background-clip: text; /* استخدام التدرج في النص */
+  background:  -webkit-linear-gradient(45deg,#0f3533,#0f3533, #0f3533,#4e540a,#ec4823,#ec4823,#ec4823); /* التدرج بين الألوان */
+             -webkit-background-clip: text; /* استخدام التدرج في النص */
             -webkit-background-clip: text;
-            color: transparent; /* جعل النص شفافًا بحيث يظهر التدرج خلفه */
+  -webkit-text-fill-color: transparent;
             display: inline; 
             font-size: 1em;
 }
@@ -228,7 +228,7 @@ p {
 .h-head {
   background: linear-gradient(45deg,#f1f1f1,#ffffff); /* التدرج بين الألوان */
             background-clip: text; /* استخدام التدرج في النص */
-            color: transparent; /* جعل النص شفافًا بحيث يظهر التدرج خلفه */
+  -webkit-text-fill-color: transparent;
             display: inline; 
    margin: 0 5px;
   font-size: 1.5em;
@@ -7672,9 +7672,9 @@ textarea.ltr {
     opacity: 1;
   }
 } .insta{
-  background:  -webkit-linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
-         -webkit-background-clip: text; /* استخدام التدرج في النص */
-  -webkit-text-fill-color: transparent;
+  babackground:-webkit-linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+                -webkit-background-clip: text; 
+                  -webkit-text-fill-color: transparent;
 }
 .whats{
   background:   -webkit-linear-gradient(45deg, #25F4EE, #FE2C55, #000000);
