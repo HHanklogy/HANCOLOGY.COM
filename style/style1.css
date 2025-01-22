@@ -220,9 +220,7 @@ p {
   margin-top: 0;
 }
 .h-head {
-  background: linear-gradient(45deg,#f1f1f1,#ffffff); /* التدرج بين الألوان */
-            background-clip: text; /* استخدام التدرج في النص */
-  color: transparent;
+  
             display: inline; 
    margin: 0 5px;
   font-size: 1.5em;
