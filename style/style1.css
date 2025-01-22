@@ -7671,11 +7671,7 @@ textarea.ltr {
     transform: translateX(0);
     opacity: 1;
   }
-} .insta{
-  babackground:-webkit-linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
-                -webkit-background-clip: text; 
-                  -webkit-text-fill-color: transparent;
-}
+} 
 .whats{
   background:   -webkit-linear-gradient(45deg, #25F4EE, #FE2C55, #000000);
          -webkit-background-clip: text; /* استخدام التدرج في النص */
