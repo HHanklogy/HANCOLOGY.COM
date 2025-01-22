@@ -183,9 +183,7 @@ body {
   background-color: #ffffff;
 }
 .head-color{
-  background: linear-gradient(45deg,#0f3533,#0f3533, #0f3533,#4e540a,#ec4823,#ec4823,#ec4823); /* التدرج بين الألوان */
-            background-clip: text; /* استخدام التدرج في النص */
-            color: transparent; /* جعل النص شفافًا بحيث يظهر التدرج خلفه */
+/* جعل النص شفافًا بحيث يظهر التدرج خلفه */
             display: inline; 
 font-family:Arial, Helvetica, sans-serif;
 font-weight: bold !important;
@@ -199,10 +197,6 @@ transition: 0.3s;
   scale: 1.3;
 }
 .f-color{
-  background:  linear-gradient(45deg,#0f3533,#0f3533, #0f3533,#4e540a,#ec4823,#ec4823,#ec4823); /* التدرج بين الألوان */
-             background-clip: text; /* استخدام التدرج في النص */
-            background-clip: text;
-  color: transparent;
             display: inline; 
             font-size: 1em;
 }
