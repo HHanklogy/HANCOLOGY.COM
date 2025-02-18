@@ -7684,3 +7684,36 @@ textarea.ltr {
   color: #e45209 !important;
   line-height: 40px !important;
 }
+.flip-scale-up-ver.clicked {
+  -webkit-animation: flip- 0.3s linear both;
+  animation: flip- 0.3s linear both;
+}
+
+ @-webkit-keyframes flip- {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+@keyframes flip- {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+}
+50% {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+100% {
+-webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+}
