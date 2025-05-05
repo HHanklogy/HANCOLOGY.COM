@@ -7611,59 +7611,140 @@ textarea.ltr {
 }
 
 
-
 .scale-in-center {
-  opacity: 0 ;
-  transform: scale(0) ; /* يبدأ بحجم صغير من المنتصف */
-  animation: scaleIn 0.3s forwards ; /* مدة الحركة 1 ثانية */
+  animation: scaleIn 1.1s both ; /* مدة الحركة 1 ثانية */
 }
 
 /* Keyframes لتأثير التكبير */
 @keyframes scaleIn {
   0% {
-    opacity: 0 ;
-    transform: scale(0) ; /* تبدأ بحجم 0 */
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: scale(0.84);
+            transform: scale(0.84);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  89% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
   }
   100% {
-    opacity: 1;
-    transform: scale(1) ; /* تصل إلى حجمها الطبيعي */
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
 }
 /* حركة الديفات من اليمين */
+/* الوضع الابتدائي */
 .slide-in-right {
   opacity: 0;
-  animation: slideRight 0.3s forwards !important;
+  transform: translateX(-800px) rotate(540deg);
+}
+
+/* لما AOS يضيف aos-animate */
+[data-aos].aos-animate .slide-in-right {
+  animation: slideRight 1.1s forwards;
+}
+
+/* Keyframes */
+@keyframes slideRight {
+  0% {
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
 }
 
 /* حركة الديفات من اليسار */
+/* الوضع الابتدائي */
 .slide-in-left {
   opacity: 0;
-  animation: slideLeft 0.3s forwards;
+  transform: translateX(-800px) rotate(-540deg);
 }
 
-/* Keyframes لحركة الانزلاق من اليمين */
-@keyframes slideRight {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+/* لما AOS يضيف aos-animate */
+[data-aos].aos-animate .slide-in-left {
+  animation: slideLeft 1.1s forwards;
 }
 
 /* Keyframes لحركة الانزلاق من اليسار */
 @keyframes slideLeft {
-  from {
-    transform: translateX(-100%);
+  0% {
+    transform: translateX(-800px) rotate(-540deg);
     opacity: 0;
   }
-  to {
-    transform: translateX(0);
+  100% {
+    transform: translateX(0) rotate(0deg);
     opacity: 1;
   }
-} 
+}
+
+.flip-scale-up-ver.clicked {
+  -webkit-animation:flip-   0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: flip-  0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+ @-webkit-keyframes flip- {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 1;
+  }
+}
+@keyframes flip- {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 1;
+  }
+}
 .whats{
   background:   -webkit-linear-gradient(45deg, #25F4EE, #FE2C55, #000000);
          -webkit-background-clip: text; /* استخدام التدرج في النص */
@@ -7683,37 +7764,4 @@ textarea.ltr {
   font-size: 1.3rem;
   color: #e45209 !important;
   line-height: 40px !important;
-}
-.flip-scale-up-ver.clicked {
-  -webkit-animation: flip- 0.29s linear both;
-  animation: flip- 0.29s linear both;
-}
-
- @-webkit-keyframes flip- {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  50% {
- -webkit-transform: rotate(180deg) scale(1.1);
-            transform: rotate(180deg) scale(1.1);
-  }
-  100% {
-    -webkit-transform: rotate(360deg) scale(1);
-            transform: rotate(360deg) scale(1);
-  }
-}
-@keyframes flip- {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  50% {
- -webkit-transform: rotate(180deg) scale(1.1);
-            transform: rotate(180deg) scale(1.1);
-  }
-  100% {
-    -webkit-transform: rotate(360deg) scale(1);
-            transform: rotate(360deg) scale(1);
-  }
 }
