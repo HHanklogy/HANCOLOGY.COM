@@ -7717,31 +7717,31 @@ textarea.ltr {
 }
 
 .flip-scale-up-ver.clicked {
-  -webkit-animation:flip-   0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  animation: flip-  0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation:flip-    0.3s ease-out both;
+  animation: flip-   0.3s ease-out both;
 }
 
  @-webkit-keyframes flip- {
   0% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    opacity: 1;
+    -webkit-transform: rotate(-540deg) scale(0);
+            transform: rotate(-540deg) scale(0);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
     opacity: 1;
   }
 }
 @keyframes flip- {
   0% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    opacity: 1;
+    -webkit-transform: rotate(-540deg) scale(0);
+            transform: rotate(-540deg) scale(0);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
     opacity: 1;
   }
 }
